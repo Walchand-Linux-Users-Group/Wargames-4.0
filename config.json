@@ -6,12 +6,20 @@
   "colors": {
     "light": {
       "background": "#000000",
+      "backgroundBox": "#00000080",
       "foreground": "#ffffff",
-      "yellow": "#ffffff",
-      "green": "#ffffff",
+      "yellow": "#ffff00",
+      "green": "#00ff00",
       "gray": "#ffffff",
-      "blue": "#ffffff",
-      "red": "#ffffff"
+      "blue": "#0000ff",
+      "red": "#ff0000"
+    },
+    "dark": {
+      "yellow": "#ffff00",
+      "green": "#00ff00",
+      "gray": "#ffffff",
+      "blue": "#0000ff",
+      "red": "#ff0000"
     }
   }
 }
