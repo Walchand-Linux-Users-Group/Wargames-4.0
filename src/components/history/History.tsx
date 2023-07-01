@@ -7,15 +7,16 @@ export const History: React.FC<{ history: Array<HistoryInterface> }> = ({
 }) => {
   return (
     <>
+      <img src="https://i.ibb.co/1L7Lk6q/wargames.png" alt="wargames" className='text-image' />
       {history.map((entry: HistoryInterface, index: number) => (
         <div key={entry.command + index}>
-          <div className="flex flex-row space-x-2">
+          {entry.command && (<div className="flex flex-row space-x-2">
             <div className="flex-shrink">
               <Ps1 />
             </div>
 
             <div className="flex-grow">{entry.command}</div>
-          </div>
+          </div>)}
 
           <p
             className="whitespace-pre-wrap mb-2"
