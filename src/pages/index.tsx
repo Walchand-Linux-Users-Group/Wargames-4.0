@@ -11,8 +11,8 @@ interface IndexPageProps {
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
-  const containerRef = React.useRef(null);<div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
-      </div>
+  const containerRef = React.useRef(null);
+  <div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow"></div>;
   const {
     history,
     command,
@@ -41,8 +41,21 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
       <Head>
         <title>{config.title}</title>
       </Head>
-      <iframe src='https://my.spline.design/clonercubebinarycopy-747ec0be50003873e447612e5cfd76e1/'></iframe>
-      <div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
+      {/* <video
+				id="background-video"
+				autoPlay
+				loop
+				muted
+				// poster="https://assets.codepen.io/6093409/river.jpg"
+			>
+				
+				<source src="https://i.gifer.com/3OYz2.mp4" type="video/mp4"></source>
+				
+				Your browser does not support the video tag.
+			</video> */}
+      <iframe src="https://i.ibb.co/zbMNvkf/image.png"></iframe>
+      {/* <iframe src="https://www.youtube.com/embed/0JsDSxAQNOo?rel=0&amp;autoplay=1&mute=1&controls=0&modestbranding=1&playlist=0JsDSxAQNOo&loop=1"></iframe> */}
+      <div className="p-8 overflow-hidden h-full border-2 rounded border-light-white">
         <div ref={containerRef} className="overflow-y-auto h-full">
           <History history={history} />
 
