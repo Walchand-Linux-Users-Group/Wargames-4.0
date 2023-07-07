@@ -41,20 +41,8 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
       <Head>
         <title>{config.title}</title>
       </Head>
-      {/* <video
-				id="background-video"
-				autoPlay
-				loop
-				muted
-				// poster="https://assets.codepen.io/6093409/river.jpg"
-			>
-				
-				<source src="https://i.gifer.com/3OYz2.mp4" type="video/mp4"></source>
-				
-				Your browser does not support the video tag.
-			</video> */}
-      <iframe src="https://i.ibb.co/zbMNvkf/image.png"></iframe>
-      {/* <iframe src="https://www.youtube.com/embed/0JsDSxAQNOo?rel=0&amp;autoplay=1&mute=1&controls=0&modestbranding=1&playlist=0JsDSxAQNOo&loop=1"></iframe> */}
+      <div id="adjuster"></div >
+      <img src="https://i.ibb.co/zbMNvkf/image.png" id='bg-img'></img>
       <div className="p-8 overflow-hidden h-full border-2 rounded border-light-white">
         <div ref={containerRef} className="overflow-y-auto h-full">
           <History history={history} />
