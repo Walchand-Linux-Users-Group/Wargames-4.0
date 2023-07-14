@@ -90,7 +90,7 @@ export const Input = ({
         type="text"
         className={`bg-light-backgroundBox dark:bg-dark-background focus:outline-none flex-grow ${
           commandExists(command) || command === ''
-            ? 'text-dark-green'
+            ? 'text-dark-lightBlue01'
             : 'text-dark-red'
         }`}
         value={command}
