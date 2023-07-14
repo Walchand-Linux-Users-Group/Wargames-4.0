@@ -8,9 +8,6 @@
   display: swap;
 }
 
-#makeThisTransparent {
-  background: transparent;
-}
 
 #ignoreFirst {
   display: none;
@@ -35,7 +32,6 @@
   top: 0;
   left: 0;
   display: block;
-  background: transparent;
 }
 
 #adjuster {
@@ -46,7 +42,6 @@
   z-index: -3;
   height: 100%;
   width: 100%;
-  background: transparent;
 }
 
 #bg-img {
@@ -85,6 +80,7 @@ div#__next,
 div#__next>div {
   height: 100%;
   overflow: auto;
+  background: rgba(0, 0, 0, 0)
 }
 
 

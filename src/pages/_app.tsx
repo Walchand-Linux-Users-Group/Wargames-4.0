@@ -21,10 +21,10 @@ const App = ({ Component, pageProps }) => {
       </Head>
 
       <div
-        className="text-light-foreground dark:text-dark-foreground min-w-max text-xs md:min-w-full md:text-base "
+        className="text-light-foreground dark:text-dark-foreground min-w-max text-xs md:min-w-full md:text-base bg-transparent"
         onClick={onClickAnywhere}
       >
-        <main className="w-full h-full p-2" id='makeThisTransparent'>
+        <main className="w-full h-full p-2 bg-transparent">
           <Component {...pageProps} inputRef={inputRef} />
         </main>
       </div>
