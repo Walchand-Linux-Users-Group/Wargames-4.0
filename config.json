@@ -6,7 +6,7 @@
   "colors": {
     "light": {
       "background": "#000000",
-      "backgroundBox": "#00000080",
+      "backgroundBox": "#00000000",
       "foreground": "#ffffff",
       "yellow": "#ffff00",
       "green": "#00ff00",
