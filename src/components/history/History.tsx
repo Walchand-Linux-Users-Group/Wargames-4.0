@@ -8,16 +8,11 @@ export const History: React.FC<{ history: Array<HistoryInterface> }> = ({
   let isFirst = 'ignoreFirst';
   return (
     <>
-      <img
-        // src="https://i.ibb.co/1L7Lk6q/wargames.png"
-
+      {/* <img
         src="https://i.ibb.co/JtX6X7g/Linux-Diary-D1-S1-thin.gif"
-        // src="https://i.ibb.co/WHRdGLG/Linux-Diary-D1-S1.gif"
-        // src="https://i.ibb.co/5BF8Hr7/stable-diffusion-xl.jpg"
-
         alt="wargames"
         className="text-image"
-      />
+      /> */}
       {history.map((entry: HistoryInterface, index: number) => (
         <div key={entry.command + index} id={isFirst}>
           {isFirst && (isFirst = '')}
