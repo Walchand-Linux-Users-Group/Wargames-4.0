@@ -42,7 +42,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
         <title>{config.title}</title>
       </Head>
       <div id="adjuster"></div>
-      <div className="p-8 overflow-hidden h-full border-0 rounded border-light-white bg-transparent">
+      <div className="overflow-hidden h-full border-0 rounded border-light-white bg-transparent" id='terminalSection'>
         <div
           ref={containerRef}
           className="overflow-y-auto h-full bg-transparent"
