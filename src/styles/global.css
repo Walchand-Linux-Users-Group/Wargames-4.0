@@ -8,9 +8,10 @@
   display: swap;
 }
 
-#makeThisTransparent{
-  background-color: transparent;
+#makeThisTransparent {
+  background: transparent;
 }
+
 #ignoreFirst {
   display: none;
 }
@@ -34,6 +35,7 @@
   top: 0;
   left: 0;
   display: block;
+  background: transparent;
 }
 
 #adjuster {
@@ -44,7 +46,9 @@
   z-index: -3;
   height: 100%;
   width: 100%;
+  background: transparent;
 }
+
 #bg-img {
   position: absolute;
   top: 0;
@@ -61,15 +65,17 @@
   font-family: 'Hack', monospace;
 
 }
+
 @media (orientation: portrait) {
   .text-image {
-      padding: 20vh 0vh 30vh 0vh;
-      object-position: center;
-    }
+    padding: 20vh 0vh 30vh 0vh;
+    object-position: center;
+  }
 }
+
 body {
   zoom: 0.9;
-  background-color: black;
+  background: black;
 }
 
 html,
