@@ -6,20 +6,28 @@
   "colors": {
     "light": {
       "background": "#000000",
-      "backgroundBox": "#00000080",
+      "backgroundBox": "#00000000",
       "foreground": "#ffffff",
       "yellow": "#ffff00",
       "green": "#00ff00",
       "gray": "#ffffff",
       "blue": "#0000ff",
-      "red": "#ff0000"
+      "red": "#ff0000",
+      "white": "#ffffff",
+      "lightBlue":"#03a9f4",
+      "lightBlue02":"#44c3fc",
+      "lightBlue01":"#97ddfc"
     },
     "dark": {
       "yellow": "#ffff00",
       "green": "#00ff00",
       "gray": "#ffffff",
       "blue": "#0000ff",
-      "red": "#ff0000"
+      "red": "#ff0000",
+      "white": "#ffffff",
+      "lightBlue":"#03a9f4",
+      "lightBlue02":"#44c3fc",
+      "lightBlue01":"#97ddfc"
     }
   }
 }

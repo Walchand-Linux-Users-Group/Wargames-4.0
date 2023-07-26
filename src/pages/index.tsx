@@ -11,8 +11,8 @@ interface IndexPageProps {
 }
 
 const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
-  const containerRef = React.useRef(null);<div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
-      </div>
+  const containerRef = React.useRef(null);
+  <div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow"></div>;
   const {
     history,
     command,
@@ -41,9 +41,12 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
       <Head>
         <title>{config.title}</title>
       </Head>
-      <iframe src='https://my.spline.design/clonercubebinarycopy-747ec0be50003873e447612e5cfd76e1/'></iframe>
-      <div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
-        <div ref={containerRef} className="overflow-y-auto h-full">
+      <div id="adjuster"></div>
+      <div className="overflow-hidden h-full border-0 rounded border-light-white bg-transparent" id='terminalSection'>
+        <div
+          ref={containerRef}
+          className="overflow-y-auto h-full bg-transparent"
+        >
           <History history={history} />
 
           <Input
