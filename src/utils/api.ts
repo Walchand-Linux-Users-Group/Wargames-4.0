@@ -5,7 +5,7 @@ import { CLIENT_RENEG_WINDOW } from "tls";
 export const getLeaderboard = async () => {
   const data = await axios({
     method: "get",
-    url: "http://127.0.0.1:80/leaderboard",
+    url: "https://wargames-api.onrender.com/leaderboard",
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json",
@@ -21,7 +21,7 @@ export const getLeaderboard = async () => {
 export const getStats = async (username) => {
   const data = await axios({
     method: "post",
-    url: "http://127.0.0.1:80/stats",
+    url: "https://wargames-api.onrender.com/stats",
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json",
@@ -39,7 +39,7 @@ export const getStats = async (username) => {
 export const submitFlag = async (username, flag) => {
   const data = await axios({
     method: "post",
-    url: "http://127.0.0.1:80/verify",
+    url: "https://wargames-api.onrender.com/verify",
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json",
@@ -72,7 +72,7 @@ export const getUserName = async (email) => {
   }
   const data = await axios({
     method: "post",
-    url: "http://127.0.0.1:80/getUserName",
+    url: "https://wargames-api.onrender.com/getUserName",
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json",

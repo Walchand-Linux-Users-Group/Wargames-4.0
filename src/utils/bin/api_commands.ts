@@ -11,10 +11,10 @@ export const show = async (args: string[]): Promise<string> => {
   +---------------+--------------------------+
   |    Command    |          Usage           |
   +===============+==========================+
-  | Submit        | submit {USERNAME}:{FLAG} |
+  | Submit        | submit USERNAME:FLAG     |
   | Ranking Table | show all                 |
-  | User Stats    | show {USERNAME}          |
-  | Get Username  | username {email}         |
+  | User Stats    | show USERNAME            |
+  | Get Username  | username EMAIL           |
   +---------------+--------------------------+
   
 `;
@@ -38,10 +38,10 @@ export const submit = async (args: string[]): Promise<string> => {
   +---------------+--------------------------+
   |    Command    |          Usage           |
   +===============+==========================+
-  | Submit        | submit {USERNAME}:{FLAG} |
+  | Submit        | submit USERNAME:FLAG     |
   | Ranking Table | show all                 |
-  | User Stats    | show {USERNAME}          |
-  | Get Username  | username {email}         |
+  | User Stats    | show USERNAME            |
+  | Get Username  | username EMAIL           |
   +---------------+--------------------------+
   
 `;
@@ -51,16 +51,16 @@ export const submit = async (args: string[]): Promise<string> => {
 
   if (splitted.length != 2) {
     return `
-  +---------------+--------------------------+
-  |    Command    |          Usage           |
-  +===============+==========================+
-  | Submit        | submit {USERNAME}:{FLAG} |
-  | Ranking Table | show all                 |
-  | User Stats    | show {USERNAME}          |
-  | Get Username  | username {email}         |
-  +---------------+--------------------------+
-  
-`;
+    +---------------+--------------------------+
+    |    Command    |          Usage           |
+    +===============+==========================+
+    | Submit        | submit USERNAME:FLAG     |
+    | Ranking Table | show all                 |
+    | User Stats    | show USERNAME            |
+    | Get Username  | username EMAIL           |
+    +---------------+--------------------------+
+    
+  `;
   }
 
   const data = submitFlag(splitted[0], splitted[1]);
@@ -72,16 +72,16 @@ export const username = async (args: string[]): Promise<string> => {
   console.log(args);
   if (args.length != 1) {
     return `
-  +---------------+--------------------------+
-  |    Command    |          Usage           |
-  +===============+==========================+
-  | Submit        | submit {USERNAME}:{FLAG} |
-  | Ranking Table | show all                 |
-  | User Stats    | show {USERNAME}          |
-  | Get Username  | username {email}         |
-  +---------------+--------------------------+
-  
-`;
+    +---------------+--------------------------+
+    |    Command    |          Usage           |
+    +===============+==========================+
+    | Submit        | submit USERNAME:FLAG     |
+    | Ranking Table | show all                 |
+    | User Stats    | show USERNAME            |
+    | Get Username  | username EMAIL           |
+    +---------------+--------------------------+
+    
+  `;
   }
   const data = getUserName(args[0]);
 

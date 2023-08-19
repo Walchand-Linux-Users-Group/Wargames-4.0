@@ -17,10 +17,10 @@ export const help = async (args: string[]): Promise<string> => {
   +---------------+--------------------------+
   |    Command    |          Usage           |
   +===============+==========================+
-  | Submit        | submit {USERNAME}:{FLAG} |
+  | Submit        | submit USERNAME:FLAG     |
   | Ranking Table | show all                 |
-  | User Stats    | show {USERNAME}          |
-  | Get Username  | username {email}         |
+  | User Stats    | show USERNAME            |
+  | Get Username  | username EMAIL           |
   +---------------+--------------------------+
   
 `;
