@@ -66,10 +66,6 @@ export const submitFlag = async (username, flag) => {
 };
 
 export const getUserName = async (email) => {
-  var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-  if (!pattern.test(email)) {
-    return `Invalid Email Id ❌❌`;
-  }
   const data = await axios({
     method: "post",
     url: "https://wargames-api.onrender.com/getUserName",
