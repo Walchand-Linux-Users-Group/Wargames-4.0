@@ -38,29 +38,29 @@ export const getStats = async (username) => {
 };
 
 export const submitFlag = async (username, flag) => {
-  const data = await axios({
-    method: "post",
-    url: "https://wargames-api.onrender.com/verify",
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Content-Type": "application/json",
-    },
-    data: {
-      username: username,
-      flag: flag,
-    },
-  });
+  // const data = await axios({
+  //   method: "post",
+  //   url: "https://wargames-api.onrender.com/verify",
+  //   headers: {
+  //     "Access-Control-Allow-Origin": "*",
+  //     "Content-Type": "application/json",
+  //   },
+  //   data: {
+  //     username: username,
+  //     flag: flag,
+  //   },
+  // });
 
-  if (data["data"].won) {
-    if (data["data"].level === 10) {
-      return `
-      Mission complete soldier, come back to the base 🫡🫡
-      `;
-    }
-    return `
-  Congratulations! You have successfully completed level ${data["data"].level} 🥳🥳
-  `;
-  }
+  // if (data["data"].won) {
+  //   if (data["data"].level === 10) {
+  //     return `
+  //     Mission complete soldier, come back to the base 🫡🫡
+  //     `;
+  //   }
+  //   return `
+  // Congratulations! You have successfully completed level ${data["data"].level} 🥳🥳
+  // `;
+  // }
   return `
   oops!! Wrong credentials ❌❌ 
   `;
