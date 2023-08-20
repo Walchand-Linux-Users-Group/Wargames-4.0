@@ -15,7 +15,6 @@ export const getLeaderboard = async () => {
   data["data"].map((item, index) => {
     result += `${index} :\tName: ${item.name}\n\tlevel : ${item.level}\n\n`;
   });
-  console.log(result);
   return "Access Denied ❌❌";
 };
 
