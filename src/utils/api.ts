@@ -15,7 +15,7 @@ export const getLeaderboard = async () => {
   data["data"].map((item, index) => {
     result += `${index} :\tName: ${item.name}\n\tlevel : ${item.level}\n\n`;
   });
-  return result;
+  return "Access Denied ❌❌";
 };
 
 export const getStats = async (username) => {
